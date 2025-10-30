@@ -1,0 +1,29 @@
+
+:root{
+  --bg:#F5F5F5;
+  --dark:#1C1C1C;
+  --accent:#E10600;
+  --silver:#C0C0C0;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Roboto,Arial,Helvetica,sans-serif;background:var(--bg);color:var(--dark)}
+.header{background:#0f0f0f;color:#fff;padding:14px 20px;position:sticky;top:0;z-index:100}
+.container{max-width:1100px;margin:0 auto;padding:24px}
+.nav{display:flex;gap:12px;align-items:center}
+.nav a{color:#ddd;text-decoration:none;padding:8px 10px;border-radius:6px}
+.nav a:hover{background:rgba(255,255,255,0.04);color:#fff}
+.hero{height:70vh;background-image:linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),url('images/hero.jpg');background-size:cover;background-position:center;display:flex;align-items:center;color:#fff}
+.hero .inner{max-width:900px;padding:24px}
+.h-title{font-family:Oswald,Arial,Helvetica,sans-serif;font-size:42px;margin:0 0 8px;color:var(--accent)}
+.h-sub{font-size:18px;margin:0 0 14px;color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card{background:#fff;padding:14px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+.footer{background:#0f0f0f;color:#ccc;padding:20px;text-align:center;margin-top:30px}
+.btn{display:inline-block;padding:10px 16px;background:var(--accent);color:#fff;border-radius:8px;text-decoration:none}
+@media (max-width:768px){
+  .h-title{font-size:28px}
+  .hero{height:50vh}
+  .nav{overflow:auto}
+}
+.contact-card{background:#fff;padding:20px;border-radius:10px;max-width:700px;margin:20px auto}
+input, textarea{width:100%;padding:10px;margin-top:8px;border:1px solid var(--silver);border-radius:6px}
